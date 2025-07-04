@@ -1,0 +1,82 @@
+
+.catagory {
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  overflow: hidden;
+}
+
+.catagory:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.catagory img {
+  width: 90%;
+  height: 170px; /* Fixed height for consistency */
+  object-fit: contain;
+  padding: 10px; /* Uniform padding */
+  display: block; /* Removes extra space below image */
+  margin: 0 auto; /* Centers the image */
+}
+
+.catagory a {
+  text-decoration: none;
+  color: rgba(28, 26, 23, 0.6); /* Improved contrast */
+  display: block; /* Makes the entire card clickable if needed */
+}
+
+.catagory h4 {
+  margin: 10px 0 5px 15px; /* Better spacing: top right bottom left */
+  color: #111; /* Darker for readability */
+  font-size: 16px;
+}
+
+.catagory p {
+  margin: 0 0 10px 15px; /* Consistent margin with h4 */
+  font-size: 12px;
+  color: #0066c0; /* Amazon-like blue */
+  font-weight: bold;
+}
+
+/* Container Improvements */
+.catagory_container {
+  position: relative;
+  margin-top: -10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1600px;
+  gap: 30px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  place-items: center;
+}
+
+/* ----- Responsive Adjustments ----- */
+@media (max-width: 768px) {
+  .catagory {
+    width: 220px;
+    height: 240px;
+  }
+
+  .catagory_container {
+    gap: 20px;
+    margin-top: -5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .catagory {
+    width: 100%; 
+    height: auto;
+    max-width: 280px; }
+
+  .catagory_container {
+    grid-template-columns: 1fr; 
+    margin-top: 0; 
+  }
+}

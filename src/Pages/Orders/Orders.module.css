@@ -1,0 +1,27 @@
+.container{
+background-color: #efeeee;
+
+padding: 20px;
+}
+
+.orders__container{
+background-color: white;
+padding: 20px;
+}
+.orders__container h2{
+    border-bottom: 2px solid orange;
+    padding: 20px;
+}
+
+.container p,h3{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container img{
+    width: 100px !important;
+}
+
+.container div{
+    height: auto !important;
+}

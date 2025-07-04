@@ -1,0 +1,130 @@
+/* Amazon Footer Styling - Base Styles */
+.amazon-footer {
+  background-color: #232f3e;
+  color: white;
+  padding-top: 30px;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.footer-back-to-top {
+  background-color: #37475a;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.footer-back-to-top button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #131a22;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #3a4553;
+}
+
+.footer-logo img {
+  margin-bottom: 10px;
+}
+
+.footer-country, .footer-copyright {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #999;
+}
+
+/* ----- Media Queries for Responsiveness ----- */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .footer-column {
+    flex: 1 1 50%; /* 2 columns per row */
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .footer-links {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%; /* 1 column per row */
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    font-size: 14px;
+  }
+
+  .footer-column li {
+    font-size: 12px;
+  }
+
+  .footer-back-to-top button {
+    font-size: 12px;
+  }
+
+  .footer-logo img {
+    width: 80px;
+  }
+}
+
+/* Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .footer-bottom {
+    padding: 15px 0;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+  }
+}

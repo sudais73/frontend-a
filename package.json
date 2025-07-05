@@ -1,9 +1,9 @@
 {
   "name": "vite-project",
   "private": true,
-   "engines": {
-  "node": "20.x"
-}
+  "engines": {
+    "node": "20.x"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,8 +11,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-
-
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

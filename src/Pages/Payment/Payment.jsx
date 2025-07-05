@@ -16,10 +16,11 @@ import {
 } from "@stripe/react-stripe-js";
 import { useState } from "react";
 import CurrencyFormat from "./../../Components/CurrencyFormat/CurrencyFormat";
-import axios from 'axios';
+
 import { ClipLoader } from 'react-spinners';
 import { useNavigate } from "react-router-dom";
 import { Type } from "../../Utlity/Action.type";
+import { axiosInstance } from "../../Api/axios";
 function Payment() {
 
   const [{ user, basket }, dispatch] = useContext(DataContext);
@@ -46,7 +47,7 @@ const[processing, setProcessing] = useState(false)
       setProcessing(true)
       //1 contacting backend to get the client secret//
 
-      const response = await axios.post(`http://localhost:5000/create-payment-intent?total=${total*100}`)
+      const response = await axiosInstance.post(`/create-payment-intent?total=${total*100}`)
       console.log(response.data)
    const clientSecret = response.data?.clientSecret
 
@@ -109,11 +110,11 @@ setProcessing(false)
 
       <section className={classes.Payment}>
         <div className={classes.flex}>
-          <h3>Delivery Adress</h3>
+          <h3>Delivery Address</h3>
           <div>
             <div>{user?.email}</div>
             <div>123 script</div>
-            <div>shashe,et</div>
+            <div>Shashe,ET</div>
           </div>
         </div>
         <hr />

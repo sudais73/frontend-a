@@ -7,6 +7,7 @@
   position: relative;
   height: 100%;
   width: 250px;
+
 }
 .card_container .title{
     font-size: 13px; /* Slightly smaller font */
@@ -72,8 +73,8 @@ background:orange;
     display: flex;
     flex-direction: row;
     gap: 50px;
-   
-    width: 100%;
+  width: 1000px;
+   max-width: 100%;
 }
 
 .flex__product h3{
@@ -88,4 +89,16 @@ background:orange;
 .flex__product img{
     width: 300px;
     height: auto;
+}
+
+@media (max-width:900px) {
+    .flex__product{
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+}
+.flex__product img{
+    width: 200px;
+    height: auto;
+}
 }

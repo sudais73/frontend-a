@@ -84,3 +84,12 @@ width: 100px !important;
     justify-content: center;
     margin-bottom: 5px;
 }
+
+@media (max-width:900px) {
+    .container{
+    flex-direction: column;
+}
+.flex__product{
+    
+    flex-direction: column !important;
+}}

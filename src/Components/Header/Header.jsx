@@ -23,7 +23,7 @@ function Header() {
                 <div className={Classes.logo_container}>
                
                     {/* {logo} */}
-                    <Link to="/"> <img src="/amazon_PNG11.png" alt="" /></Link>
+                    <Link  onClick={()=>scrollTo(0,0)} to="/"> <img src="/amazon_PNG11.png" alt="" /></Link>
                     {/* {delivery} */}
                     <div  className={Classes.delivery}>
                         <span>
@@ -58,7 +58,7 @@ function Header() {
                         </select>
                         </Link>
 
-                    <Link to={!user&&"/auth"}>
+                    <Link  onClick={()=>scrollTo(0,0)} to={!user&&"/auth"}>
                         <div>
                             <div>
                                 {
@@ -73,12 +73,12 @@ function Header() {
                     </Link>
 
                     {/* orders */}
-                    <Link to="/orders" >
+                    <Link  onClick={()=>scrollTo(0,0)} to="/orders" >
                         <p>returns</p>
                         <span> & order</span>
                     </Link>
                     {/* cart */}
-                    <Link to="/cart" className={Classes.cart}>
+                    <Link  onClick={()=>scrollTo(0,0)} to="/cart" className={Classes.cart}>
                     <BiCart size={35} />
                         <span>{totalItem}</span>
                     </Link>

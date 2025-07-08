@@ -25,7 +25,7 @@ const addToCart =()=>{
 
   return (
     <div className={`${classes.card_container } ${flex?classes.flex__product:""}`}>
-      <Link to={`/products/${id}`}>
+      <Link onClick={()=>scrollTo(0,0)} to={`/products/${id}`}>
         <img src={image} alt="" />
 
       </Link>

@@ -89,3 +89,16 @@ background:orange;
     width: 300px;
     height: auto;
 }
+
+
+@media (max-width:900px) {
+    .flex__product{
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+}
+.flex__product img{
+    width: 200px;
+    height: auto;
+}
+}
